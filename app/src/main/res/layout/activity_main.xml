@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/liner_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple"
@@ -36,6 +37,17 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Ola kothin!"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
         android:id="@+id/text_phrase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,6 +72,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
         android:text="Nova Frase" />
 
 </RelativeLayout>

@@ -12,11 +12,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.buttonFrases.setOnClickListener(this)
+        handelUserName()
+
     }
 
     override fun onClick(view: View) {
         if (view.id == R.id.buttonFrases){
             var s = ""
         }
+    }
+    // mostra nome usuario
+    private fun handelUserName(){
+        val name = SecurityPreferences(this).getString("USER_NAME")
+        binding.textUser.text = "Olá, $name!"
     }
 }
